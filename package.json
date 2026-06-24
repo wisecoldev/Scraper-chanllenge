@@ -1,0 +1,33 @@
+{
+  "name": "oefa-tfa-scraper",
+  "version": "1.0.0",
+  "description": "TypeScript scraper for the OEFA / Poder Judicial del Perú JSF (PrimeFaces) jurisprudence repositories. Navigates every page, extracts document metadata and downloads the associated PDFs with robust 429 (rate-limit) handling.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "scrape": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "retry-failed": "ts-node src/index.ts --retry-failed"
+  },
+  "keywords": [
+    "scraper",
+    "typescript",
+    "jsf",
+    "primefaces",
+    "oefa",
+    "axios",
+    "cheerio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0"
+  }
+}

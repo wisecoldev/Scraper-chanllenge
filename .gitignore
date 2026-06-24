@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Scraper output (data + downloaded PDFs can be large) -- not committed
+output/
+
+# Logs
+*.log
+
+# Environment / editor
+.env
+.env.local
+.DS_Store
+.idea/
+.vscode/
+*.tsbuildinfo
